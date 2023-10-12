@@ -1,0 +1,16 @@
+{
+    "newsFeature": "-------------- News Feature Translation Section ------------------",
+    "otherFeature": "-------------- Global Translation ------------------",
+    "mobileData": "Mobile Data",
+    "wifi": "Wifi",
+    "pleaseCheckYourInternetConnection": "Please check your internet connection",
+    "pleaseTurnOnWifiOrMobileData": "Please turn on wifi or mobile data on",
+    "refresh": "Refresh",
+    "seeAll": "See all",
+    "search": "Search",
+    "filter": "Filter",
+    "errorsTranslation": "-------------- Errors Translation ------------------",
+    "thereIsNoCachedData": "There is no cached data",
+    "someThingWentWrong": "Something went wrong",
+    "serverError": "Server Error"
+}

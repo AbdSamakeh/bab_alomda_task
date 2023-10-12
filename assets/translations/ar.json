@@ -1,0 +1,16 @@
+{
+    "newsFeature": "-------------- ترجمة القسم الخاص ميزة الأخبار ------------------",
+    "otherFeature": "-------------- قسم الترجمة العام في التطبيث ------------------",
+    "mobileData": "بيانات الهاتف",
+    "wifi": "لاسلكي",
+    "pleaseCheckYourInternetConnection": "الرجاء التحقق من اتصال الانترنت الخاص بك",
+    "pleaseTurnOnWifiOrMobileData": "يرجى تشغيل لاسلكي أو تشغيل بيانات الهاتف",
+    "refresh": "تحديث",
+    "seeAll": "رؤية الجميع",
+    "search": "بحث",
+    "filter": "تنقية",
+    "errorsTranslation": "-------------- قسم ترجمة الأخطاء  ------------------",
+    "thereIsNoCachedData": "لا توجد بيانات مخزنة",
+    "someThingWentWrong": "حدث خطأ ما",
+    "serverError": "حدث خطأ في الخادم"
+}
