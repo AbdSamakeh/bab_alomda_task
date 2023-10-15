@@ -32,8 +32,10 @@ class RefreshButton extends StatelessWidget {
           AppTextWidget(
             textAlign: TextAlign.center,
             text: refreshTitle,
-            fontSize: FontSizeManger.fs18,
+            fontSize: FontSizeManger.fs20,
             overflow: TextOverflow.visible,
+            fontWeight: FontWeightManger.semiBoldWeight,
+            color: AppColorManger.redAppColor,
           ),
           SizedBox(
             height: AppHeightManger.h2,
@@ -41,8 +43,8 @@ class RefreshButton extends StatelessWidget {
           haveRefreshButton == false
               ? const SizedBox()
               : MainAppButton(
-                  width: AppWidthManger.w28,
-                  height: AppHeightManger.h6,
+                  width: AppWidthManger.w30,
+                  height: AppHeightManger.h5,
                   alignment: Alignment.center,
                   onTap: onTap,
                   child: AppTextWidget(

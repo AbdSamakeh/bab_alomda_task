@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../resource/color_manger.dart';
 import '../../resource/font_manger.dart';
@@ -28,6 +29,8 @@ class AppTextFormField extends StatelessWidget {
   final bool? expand;
   final bool? autoFoucs;
   final EdgeInsetsGeometry? contentPadding;
+  final List<TextInputFormatter>? inputFormatters;
+
   const AppTextFormField(
       {Key? key,
       this.enabled,
@@ -52,12 +55,14 @@ class AppTextFormField extends StatelessWidget {
       this.maxLines,
       this.prefixIcon,
       this.hintText,
+      this.inputFormatters,
       this.outlinedBorder})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      inputFormatters: inputFormatters,
       onFieldSubmitted: onFilledSubmited,
       validator: validator,
       controller: controller,

@@ -3,8 +3,8 @@
 class ApiUrl {
   late String _link;
   String baseUrl = '';
-  final String firstBaseUrl = "http://192.168.100.64:8000/api/v1/";
-  final String secondBaseUrl = "https://shared-backend.pillstore.app/api/";
+  final String firstBaseUrl = "https://api.nytimes.com/svc/topstories/v2/";
+  final String secondBaseUrl = "";
   final bool? useSecondBaseUrl;
   ApiUrl(
     this._link, {

@@ -9,6 +9,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 
 import '../resource/constant_manager.dart';
 
+//Connection Checker Function
 Future<CheckConnectionArgs> isThereConnection() async {
   ConnectivityResult connectivityResult =
       await (Connectivity().checkConnectivity());
@@ -37,7 +38,7 @@ Future<CheckConnectionArgs> isThereConnection() async {
   } else {
     return CheckConnectionArgs(
         //!Make isConnected Filed False Value When Make Relase Version
-        //Because While Debugging In S/Emulator The Internet Connection Blocked
+        //Because While Debugging In S/Emulator The Internet Connection Blocked If It's False
         isConnected: true,
         message: LocaleKeys.pleaseTurnOnWifiOrMobileData.tr());
   }

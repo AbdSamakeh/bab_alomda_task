@@ -1,345 +1,58 @@
 {
-    "success": true,
-    "error_code": 200,
-    "message": "تمت العملية بنجاح",
-    "data": [
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+    "section": "home",
+    "last_updated": "2023-10-13T11:22:22-04:00",
+    "num_results": 34,
+    "results": [
         {
-            "item": {
-                "id": 4,
-                "item": {
-                    "id": 20,
-                    "name": "123123",
-                    "code": "1231231235353",
-                    "specifications": null,
-                    "min_quantity": null,
-                    "max_quantity": null,
-                    "safety_stock": null,
-                    "order_limit": null,
-                    "current_quantity": null,
-                    "manufacturer": null,
-                    "files": [],
-                    "category": null,
-                    "dosage": null,
-                    "source": null,
-                    "item_location": null,
-                    "country_of_manufacture": null,
-                    "item_color": null,
-                    "item_model": null,
-                    "units_prices": null,
-                    "titers_active_ingredients": null,
-                    "item_offers": null,
-                    "price_history": null,
-                    "distributor": {
-                        "id": 1,
-                        "name": "aboooodh",
-                        "name_en": "aboooodh",
-                        "name_ar": "aboooodh",
-                        "status": 1,
-                        "phone_number": "0945404050",
-                        "email": null,
-                        "createdBy": "Ahmad",
-                        "createdAt": "2023-09-17",
-                        "url": "http://192.168.100.64:8000/storage/Distributor-avatar.png",
-                        "address": {
-                            "id": 1,
-                            "street": "dd",
-                            "building_number": "aaa",
-                            "lat": null,
-                            "lng": null,
-                            "city": {
-                                "id": 1,
-                                "name": "دمشق"
-                            },
-                            "region": null,
-                            "sub_region": {
-                                "id": 3,
-                                "name": "باب توما",
-                                "city_id": 1
-                            }
-                        },
-                        "lastSubscription": {
-                            "id": 1,
-                            "start_date": "2023-09-17",
-                            "end_date": "2023-12-17",
-                            "paid_amount": 0,
-                            "type": 1,
-                            "status": 1,
-                            "created_by": "Ahmad",
-                            "created_at": "2023-09-17"
-                        }
-                    },
-                    "is_in_cart": true,
-                    "is_cart_enable": true,
-                    "is_in_wish_list": false,
-                    "is_notify": true
-                },
-                "update_type": 4,
-                "wholesale_price_new": 0,
-                "wholesale_price_old": 0,
-                "created_at": "2023-09-17",
-                "since": "اليوم"
-            },
-            "news": null,
-            "is_item": true
-        },
-        {
-            "item": {
-                "id": 3,
-                "item": {
-                    "id": 14,
-                    "name": "بيني رون",
-                    "code": "4212424242242",
-                    "specifications": "121",
-                    "min_quantity": null,
-                    "max_quantity": null,
-                    "safety_stock": null,
-                    "order_limit": null,
-                    "current_quantity": "8,888",
-                    "manufacturer": null,
-                    "files": [],
-                    "category": null,
-                    "dosage": {
-                        "id": 8,
-                        "name": "12",
-                        "dosage_type": null
-                    },
-                    "source": null,
-                    "item_location": null,
-                    "country_of_manufacture": null,
-                    "item_color": null,
-                    "item_model": null,
-                    "units_prices": null,
-                    "titers_active_ingredients": null,
-                    "item_offers": null,
-                    "price_history": null,
-                    "distributor": {
-                        "id": 1,
-                        "name": "aboooodh",
-                        "name_en": "aboooodh",
-                        "name_ar": "aboooodh",
-                        "status": 1,
-                        "phone_number": "0945404050",
-                        "email": null,
-                        "createdBy": "Ahmad",
-                        "createdAt": "2023-09-17",
-                        "url": "http://192.168.100.64:8000/storage/Distributor-avatar.png",
-                        "address": {
-                            "id": 1,
-                            "street": "dd",
-                            "building_number": "aaa",
-                            "lat": null,
-                            "lng": null,
-                            "city": {
-                                "id": 1,
-                                "name": "دمشق"
-                            },
-                            "region": null,
-                            "sub_region": {
-                                "id": 3,
-                                "name": "باب توما",
-                                "city_id": 1
-                            }
-                        },
-                        "lastSubscription": {
-                            "id": 1,
-                            "start_date": "2023-09-17",
-                            "end_date": "2023-12-17",
-                            "paid_amount": 0,
-                            "type": 1,
-                            "status": 1,
-                            "created_by": "Ahmad",
-                            "created_at": "2023-09-17"
-                        }
-                    },
-                    "is_in_cart": true,
-                    "is_cart_enable": true,
-                    "is_in_wish_list": false,
-                    "is_notify": true
-                },
-                "update_type": 2,
-                "wholesale_price_new": 0,
-                "wholesale_price_old": 0,
-                "created_at": "2023-09-17",
-                "since": "اليوم"
-            },
-            "news": null,
-            "is_item": true
-        },
-        {
-            "item": {
-                "id": 2,
-                "item": {
-                    "id": 17,
-                    "name": "11بيني رون",
-                    "code": "1232131231313",
-                    "specifications": null,
-                    "min_quantity": "20",
-                    "max_quantity": null,
-                    "safety_stock": null,
-                    "order_limit": null,
-                    "current_quantity": "30",
-                    "manufacturer": null,
-                    "files": [],
-                    "category": null,
-                    "dosage": null,
-                    "source": null,
-                    "item_location": null,
-                    "country_of_manufacture": null,
-                    "item_color": null,
-                    "item_model": null,
-                    "units_prices": null,
-                    "titers_active_ingredients": null,
-                    "item_offers": null,
-                    "price_history": null,
-                    "distributor": {
-                        "id": 1,
-                        "name": "aboooodh",
-                        "name_en": "aboooodh",
-                        "name_ar": "aboooodh",
-                        "status": 1,
-                        "phone_number": "0945404050",
-                        "email": null,
-                        "createdBy": "Ahmad",
-                        "createdAt": "2023-09-17",
-                        "url": "http://192.168.100.64:8000/storage/Distributor-avatar.png",
-                        "address": {
-                            "id": 1,
-                            "street": "dd",
-                            "building_number": "aaa",
-                            "lat": null,
-                            "lng": null,
-                            "city": {
-                                "id": 1,
-                                "name": "دمشق"
-                            },
-                            "region": null,
-                            "sub_region": {
-                                "id": 3,
-                                "name": "باب توما",
-                                "city_id": 1
-                            }
-                        },
-                        "lastSubscription": {
-                            "id": 1,
-                            "start_date": "2023-09-17",
-                            "end_date": "2023-12-17",
-                            "paid_amount": 0,
-                            "type": 1,
-                            "status": 1,
-                            "created_by": "Ahmad",
-                            "created_at": "2023-09-17"
-                        }
-                    },
-                    "is_in_cart": true,
-                    "is_cart_enable": true,
-                    "is_in_wish_list": false,
-                    "is_notify": true
-                },
-                "update_type": 3,
-                "wholesale_price_new": 0,
-                "wholesale_price_old": 0,
-                "created_at": "2023-09-17",
-                "since": "اليوم"
-            },
-            "news": null,
-            "is_item": true
-        },
-        {
-            "item": {
-                "id": 1,
-                "item": {
-                    "id": 17,
-                    "name": "11بيني رون",
-                    "code": "1232131231313",
-                    "specifications": null,
-                    "min_quantity": "20",
-                    "max_quantity": null,
-                    "safety_stock": null,
-                    "order_limit": null,
-                    "current_quantity": "30",
-                    "manufacturer": null,
-                    "files": [],
-                    "category": null,
-                    "dosage": null,
-                    "source": null,
-                    "item_location": null,
-                    "country_of_manufacture": null,
-                    "item_color": null,
-                    "item_model": null,
-                    "units_prices": null,
-                    "titers_active_ingredients": null,
-                    "item_offers": null,
-                    "price_history": null,
-                    "distributor": {
-                        "id": 1,
-                        "name": "aboooodh",
-                        "name_en": "aboooodh",
-                        "name_ar": "aboooodh",
-                        "status": 1,
-                        "phone_number": "0945404050",
-                        "email": null,
-                        "createdBy": "Ahmad",
-                        "createdAt": "2023-09-17",
-                        "url": "http://192.168.100.64:8000/storage/Distributor-avatar.png",
-                        "address": {
-                            "id": 1,
-                            "street": "dd",
-                            "building_number": "aaa",
-                            "lat": null,
-                            "lng": null,
-                            "city": {
-                                "id": 1,
-                                "name": "دمشق"
-                            },
-                            "region": null,
-                            "sub_region": {
-                                "id": 3,
-                                "name": "باب توما",
-                                "city_id": 1
-                            }
-                        },
-                        "lastSubscription": {
-                            "id": 1,
-                            "start_date": "2023-09-17",
-                            "end_date": "2023-12-17",
-                            "paid_amount": 0,
-                            "type": 1,
-                            "status": 1,
-                            "created_by": "Ahmad",
-                            "created_at": "2023-09-17"
-                        }
-                    },
-                    "is_in_cart": true,
-                    "is_cart_enable": true,
-                    "is_in_wish_list": false,
-                    "is_notify": true
-                },
-                "update_type": 1,
-                "wholesale_price_new": 60000,
-                "wholesale_price_old": 36000,
-                "created_at": "2023-09-17",
-                "since": "اليوم"
-            },
-            "news": null,
-            "is_item": true
-        },
-        {
-            "item": null,
-            "news": {
-                "id": 3,
-                "title": "aaa",
-                "description": "aaaa",
-                "media": {
-                    "id": 2,
-                    "file_name": "20230917122904563800_.webp",
-                    "is_featured": false,
-                    "url": "http://192.168.100.64:8000/storage/feed/20230917122904563800_.webp"
-                },
-                "createdAt": "2023-09-16",
-                "since": "1 يوم"
-            },
-            "is_item": false
+            "section": "world",
+            "subsection": "middleeast",
+            "title": "Title",
+            "abstract": "abstract",
+            "url": "https://www.nytimes.com",
+            "uri": "nyt://article/",
+            "byline": "byline",
+            "item_type": "Item Type",
+            "updated_date": "2023-10-13T10:11:59-04:00",
+            "created_date": "2023-10-13T05:48:39-04:00",
+            "published_date": "2023-10-13T05:48:39-04:00",
+            "material_type_facet": "",
+            "kicker": "",
+            "des_facet": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "org_facet": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "per_facet": [],
+            "geo_facet": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "multimedia": [
+                {
+                    "url": "https://static01.nyt.com/images/2023/10/13/multimedia",
+                    "format": "Super",
+                    "height": 1365,
+                    "width": 2048,
+                    "type": "image",
+                    "subtype": "photo",
+                    "caption": "Caption",
+                    "copyright": "Copy Right"
+                }
+            ],
+            "short_url": ""
         }
-    ],
-    "pagination": null
+    ]
 }

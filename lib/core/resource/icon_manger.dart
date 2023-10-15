@@ -1,7 +1,8 @@
 //Get Icons Pathes
 class AppIconManger {
   //Shared Icons
-  static const String deleteIcon = "assets/icon/delete.svg";
 
   //Icons News Feature
+  static const String categoryIcon = "assets/icon/news/category.svg";
+  static const String listIcon = "assets/icon/news/list.svg";
 }

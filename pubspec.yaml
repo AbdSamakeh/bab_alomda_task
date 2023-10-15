@@ -26,6 +26,7 @@ dependencies:
   mime: ^1.0.4
   http_parser: ^4.0.2
   flutter_svg: ^2.0.7
+  carousel_slider: ^4.2.1
 
 dev_dependencies:
   flutter_test:
@@ -38,8 +39,14 @@ flutter:
 
   assets:
     - assets/image/
+    - assets/image/shared/
+    - assets/image/news/
     - assets/icon/
+    - assets/icon/news/
+    - assets/icon/shared/
     - assets/lottie/
+    - assets/lottie/shared/
+    - assets/lottie/news/
     - assets/translations/
     - assets/video/
 

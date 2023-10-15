@@ -12,21 +12,19 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.leading,
     this.leadingWidth,
     this.automaticallyImplyLeading,
-    this.roundedBottomShape,
+    this.roundedShape,
     this.centerTitle,
     this.elevation,
-    this.bottom,
     this.actions,
   }) : super(key: key);
   final String title;
   final Widget? leading;
   final double? leadingWidth;
   final bool? automaticallyImplyLeading;
-  final bool? roundedBottomShape;
+  final bool? roundedShape;
   final bool? centerTitle;
   final double? elevation;
   final List<Widget>? actions;
-  final PreferredSizeWidget? bottom;
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +39,10 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
         text: title,
         style: Theme.of(context).textTheme.titleLarge,
       ),
-      centerTitle: centerTitle ?? true,
+      centerTitle: centerTitle ?? false,
       elevation: elevation ?? 0,
-      bottom: bottom,
       automaticallyImplyLeading: automaticallyImplyLeading ?? true,
-      shape: roundedBottomShape == true
+      shape: roundedShape == true
           ? RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(AppRadiusManger.r3),
@@ -55,6 +52,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
     );
   }
 
+  //Hight Of App Bar
   @override
-  Size get preferredSize => Size.fromHeight(AppHeightManger.h6);
+  Size get preferredSize => Size.fromHeight(AppHeightManger.h8);
 }

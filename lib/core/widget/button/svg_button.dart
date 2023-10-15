@@ -40,6 +40,7 @@ class SvgButton extends StatelessWidget {
         padding: padding,
         child: SvgPicture.asset(
           iconAssetPath,
+          // ignore: deprecated_member_use
           color: color,
           width: width,
           height: height,

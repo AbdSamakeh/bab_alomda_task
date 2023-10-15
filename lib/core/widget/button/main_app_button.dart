@@ -12,7 +12,6 @@ class MainAppButton extends StatelessWidget {
     this.color,
     this.borderColor,
     this.haveShadow,
-    this.isGradient,
     this.outLinedBorde,
     this.child,
     this.padding,
@@ -26,7 +25,6 @@ class MainAppButton extends StatelessWidget {
   final Color? color;
   final Color? borderColor;
   final bool? haveShadow;
-  final bool? isGradient;
   final bool? outLinedBorde;
   final Widget? child;
   final EdgeInsetsGeometry? padding;
@@ -43,18 +41,8 @@ class MainAppButton extends StatelessWidget {
         padding: padding,
         alignment: alignment,
         width: width,
-        height: height ?? AppHeightManger.h6,
+        height: height ?? AppHeightManger.h5,
         decoration: BoxDecoration(
-          gradient: isGradient == false
-              ? null
-              : const LinearGradient(
-                  colors: [
-                    AppColorManger.mainAppColor,
-                    AppColorManger.mainAppColorGradient,
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
           border: outLinedBorde == true
               ? Border.all(
                   color: borderColor ?? AppColorManger.mainAppColor,
@@ -74,7 +62,7 @@ class MainAppButton extends StatelessWidget {
               : null,
           color: outLinedBorde == true
               ? AppColorManger.white
-              : color ?? AppColorManger.mainAppColor,
+              : color ?? AppColorManger.secondaryAppColor,
           borderRadius:
               borderRadius ?? BorderRadius.circular(AppRadiusManger.r3),
         ),

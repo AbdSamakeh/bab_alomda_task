@@ -4,7 +4,7 @@
 //!Api Get
 class ApiGetUrl {
   //News Feature
-  static const String citiesUrl = "city";
+  static const String newsUrl = "home.json";
 }
 
 //Everey Put Api End Points Urls For Seperated In Feature Name

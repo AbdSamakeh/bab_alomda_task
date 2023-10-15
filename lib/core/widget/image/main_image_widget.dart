@@ -18,20 +18,20 @@ class MainImageWidget extends StatelessWidget {
   final BorderRadiusGeometry? borderRadius;
   @override
   Widget build(BuildContext context) {
-    return CachedNetworkImage(
-      imageUrl: imageUrl,
-      fit: fit,
-      width: width,
-      height: height,
-      placeholder: (context, url) => Image.asset(
-        AppImageManger.placeHolderImage,
-        fit: BoxFit.cover,
-      ),
-      errorWidget: (context, url, error) => Image.asset(
-        AppImageManger.errorHolderImage,
-        fit: BoxFit.cover,
-      ),
-      placeholderFadeInDuration: const Duration(seconds: 2),
-    );
+      return CachedNetworkImage(
+        imageUrl: imageUrl,
+        fit: fit,
+        width: width,
+        height: height,
+        placeholder: (context, url) => Image.asset(
+          AppImageManger.placeHolderImage,
+          fit: BoxFit.cover,
+        ),
+        errorWidget: (context, url, error) => Image.asset(
+          AppImageManger.errorHolderImage,
+          fit: BoxFit.cover,
+        ),
+        placeholderFadeInDuration: const Duration(seconds: 2),
+      );
   }
 }

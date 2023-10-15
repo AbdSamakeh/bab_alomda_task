@@ -38,7 +38,15 @@ class AppWidthManger {
   static double w4 = 4.w;
   static double w12 = 12.w;
   static double w28 = 28.w;
+  static double w30 = 30.w;
+  static double w34 = 34.w;
   static double w38 = 38.w;
+  static double w40 = 40.w;
+  static double w50 = 50.w;
+  static double w56 = 56.w;
+  static double w60 = 60.w;
+  static double w64 = 64.w;
+  static double w70 = 70.w;
   static double w80 = 80.w;
   static double w84 = 84.w;
   static double w92 = 92.w;
@@ -50,7 +58,14 @@ class AppWidthManger {
 class AppHeightManger {
   static double h1 = 1.h;
   static double h2 = 2.h;
+  static double h5 = 5.h;
   static double h6 = 6.h;
+  static double h8 = 8.h;
+  static double h10 = 10.h;
+  static double h14 = 14.h;
+  static double h16 = 16.h;
+  static double h18 = 18.h;
+  static double h20 = 20.h;
   static double h28 = 28.h;
   static double h90 = 90.h;
   static double h100 = 100.h;

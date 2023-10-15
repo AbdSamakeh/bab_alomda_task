@@ -22,9 +22,19 @@ class AppSharedPreferences {
     _sharedPreferences.setString(AppKeyManger.language, language);
   }
 
+  //Cache Theme Mode in local memorey
+  static cashTheme({required bool isLight}) {
+    _sharedPreferences.setBool(AppKeyManger.themeModeLocalKey, isLight);
+  }
+
   //!Get Functions
   // Get cached Language in local memorey and set the deafult langauge is English if it's null
   static String getLanguage() {
     return _sharedPreferences.getString(AppKeyManger.language) ?? "en";
+  }
+
+  // Get cached Theme Mode in local memorey and set the deafult Mode is Light if it's null
+  static bool getCashedThemeMode() {
+    return _sharedPreferences.getBool(AppKeyManger.themeModeLocalKey) ?? true;
   }
 }

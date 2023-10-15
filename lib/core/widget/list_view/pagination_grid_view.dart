@@ -77,7 +77,7 @@ class _PaginationGridViewState extends State<PaginationGridView> {
                   crossAxisCount: 2,
                   childAspectRatio: AppWidthManger.w38 / AppHeightManger.h28,
                   crossAxisSpacing: AppWidthManger.w4,
-                  mainAxisSpacing: AppHeightManger.h1),
+                  mainAxisSpacing: AppHeightManger.h2),
           shrinkWrap: true,
           padding: widget.padding ??
               EdgeInsets.symmetric(
