@@ -1,19 +1,20 @@
+import 'package:top_story_nyt/features/news/data/models/news_model.dart';
+
 import '../../../domain/entities/request/news_request_entite.dart';
 
 import '../../../../../core/api/api_links.dart';
 import '../../../../../core/api/api_methods.dart';
 import '../../../../../core/error/exception.dart';
-import '../../../domain/entities/response/news_response_entite.dart';
 
 abstract class NewsRemote {
-  Future<NewsResponseEntite> getNews();
+  Future<NewsModel> getNews();
 }
 
 class NewsRemoteImplements extends NewsRemote {
   //Calling Api End Point Impelementation
   //Call Get News Remote Implementation
   @override
-  Future<NewsResponseEntite> getNews() async {
+  Future<NewsModel> getNews() async {
     final response = await ApiMethods().get(
       //End Point Here Throw ApiGetUrl Class
       url: ApiGetUrl.newsUrl,
@@ -27,7 +28,7 @@ class NewsRemoteImplements extends NewsRemote {
     //If It Succses Pars Coming Data To Dart Object
     //And Return It To Repository Impelemntation Layer
     if (response.statusCode == 200) {
-      return newsResponseEntiteFromJson(response.body);
+      return newsFromJson(response.body);
     } else {
       throw ServerException(response: response);
     }

@@ -1,22 +1,22 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 // To parse this JSON data, do
 //
 //     final newsResponseEntite = newsResponseEntiteFromJson(jsonString);
 
-import 'dart:convert';
 
-NewsResponseEntite newsResponseEntiteFromJson(String str) =>
-    NewsResponseEntite.fromJson(json.decode(str));
+import 'package:equatable/equatable.dart';
 
-String newsResponseEntiteToJson(NewsResponseEntite data) =>
-    json.encode(data.toJson());
+import '../../../data/models/news_model.dart';
 
-class NewsResponseEntite {
-  final String status;
-  final String section;
-  final int numNewss;
-  final List<News> results;
 
-  NewsResponseEntite({
+
+class NewsResponseEntite extends Equatable {
+  final String? status;
+  final String? section;
+  final int? numNewss;
+  final List<News>? results;
+
+  const NewsResponseEntite({
     required this.status,
     required this.section,
     required this.numNewss,
@@ -25,25 +25,13 @@ class NewsResponseEntite {
 
   //! To Make Initial Object Instance With Deafults Values
   factory NewsResponseEntite.initial() {
-    return newsResponseEntiteFromJson('{}');
+    return newsFromJson('{}');
   }
 
-  factory NewsResponseEntite.fromJson(Map<String, dynamic> json) =>
-      NewsResponseEntite(
-        status: json["status"] ?? '',
-        section: json["section"] ?? '',
-        numNewss: json["num_results"] ?? 0,
-        results: json["results"] == null
-            ? []
-            : List<News>.from(json["results"].map((x) => News.fromJson(x))),
-      );
+  
 
-  Map<String, dynamic> toJson() => {
-        "status": status,
-        "section": section,
-        "num_results": numNewss,
-        "results": List<dynamic>.from(results.map((x) => x.toJson())),
-      };
+  @override
+  List<Object?> get props => [status, section, numNewss, results];
 }
 
 class News {
@@ -56,7 +44,7 @@ class News {
   final String byline;
   final String itemType;
   final DateTime publishedDate;
-   final List<Multimedia> multimedia;
+  final List<Multimedia> multimedia;
   final String shortUrl;
 
   News({

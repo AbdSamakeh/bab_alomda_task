@@ -1,10 +1,9 @@
 # top_story_nyt
 
-A new Flutter project.
+A BAB Flutter project (NYT) With Clean Architecture.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
+ 
 
 A few resources to get you started if this is your first Flutter project:
 

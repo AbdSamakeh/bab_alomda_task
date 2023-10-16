@@ -44,7 +44,7 @@ class NewsCubit extends Cubit<NewsState> {
       (newsData) {
         //Fill List Sections List For Fetched Data
         List<String> sections = [];
-        for (var item in newsData.results) {
+        for (var item in newsData.results!) {
           if (!sections.contains(item.section)) {
             sections.add(item.section);
           }

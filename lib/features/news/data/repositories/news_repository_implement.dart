@@ -3,6 +3,7 @@ import 'package:dartz/dartz.dart';
 
 import 'package:top_story_nyt/core/error/failures.dart';
 import 'package:top_story_nyt/features/news/data/datasources/local/news_local.dart';
+import 'package:top_story_nyt/features/news/data/models/news_model.dart';
 import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart';
 
 import '../../../../core/api/connector.dart';
@@ -24,11 +25,11 @@ class NewsRepositoryImplements implements NewsRepository {
   });
   //Get News Implementation
   @override
-  Future<Either<Failure, NewsResponseEntite>> getNews() async {
+  Future<Either<Failure, NewsModel>> getNews() async {
     //The Connect Metod Inside Connector Class Take The Data Type Of Returned Data After Calling Remote
     //And Check If There Is Any Exception Return It As Left
     //And If The Data Fetched Returned It As Result Paramters To Above Layer
-    return Connector<NewsResponseEntite>().connect(
+    return Connector<NewsModel>().connect(
       remote: () async {
         final result = await newsRemote.getNews();
         return Right(result);

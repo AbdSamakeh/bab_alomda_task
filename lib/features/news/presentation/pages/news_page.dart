@@ -109,7 +109,7 @@ class _NewsPageState extends State<NewsPage> {
             //When Data Came Fill List Of News
             case CubitStatus.succses:
               {
-                newsList = state.newsResponseEntite.results;
+                newsList = state.newsResponseEntite.results!;
                 //Fill Section List
                 //Mapping It To Drop Down List And Add All Filter Type Also To Reset Filter
                 if (state.sections.isNotEmpty) {
