@@ -67,6 +67,7 @@ class AppHeightManger {
   static double h18 = 18.h;
   static double h20 = 20.h;
   static double h28 = 28.h;
+  static double h38 = 38.h;
   static double h90 = 90.h;
   static double h100 = 100.h;
 }

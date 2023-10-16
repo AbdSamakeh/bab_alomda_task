@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../../resource/color_manger.dart';
 import '../../resource/font_manger.dart';
@@ -20,7 +19,7 @@ class NoteMessage {
       content: GestureDetector(
         onTap: onTap,
         child: SizedBox(
-          width: 100.w,
+          width: AppWidthManger.w100,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,

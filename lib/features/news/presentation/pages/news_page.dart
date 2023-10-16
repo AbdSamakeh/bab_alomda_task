@@ -39,56 +39,62 @@ class _NewsPageState extends State<NewsPage> {
   //News List
   List<News> newsList = [];
   List<PopupMenuItem<FilterDropDown>> popubFilterType = [];
+  //App Bar
+  homeAppBar() {
+    return HomeAppBar(
+      filtterWidget: BlocBuilder<NewsCubit, NewsState>(
+        builder: (context, state) {
+          if (state.status == CubitStatus.succses &&
+              state.newsList.isNotEmpty) {
+            return FilterDropDownWidget(
+              popubFilterType: popubFilterType,
+              onSelected: (FilterDropDown result) {
+                // Handle menu item selection
+                context.read<NewsCubit>().newsSearchAndFilter(
+                      isSearch: false,
+                      searchQuery: result.filterName,
+                      newsList: newsList,
+                      reset: result.filterName == LocaleKeys.all.tr(),
+                    );
+              },
+            );
+          } else {
+            return const SizedBox();
+          }
+        },
+      ),
+      title: LocaleKeys.nytNews.tr(),
+      roundedBottomShape: true,
+      isGridView: isGridView,
+      centerTitle: false,
+      onSearchSubmited: (searchQuery) {
+        bool reset = searchQuery!.isEmpty;
+        context.read<NewsCubit>().newsSearchAndFilter(
+            isSearch: true,
+            searchQuery: searchQuery,
+            newsList: newsList,
+            reset: reset);
+        return null;
+      },
+      onChangedSearch: (searchQuery) {
+        bool reset = searchQuery!.isEmpty;
+        context.read<NewsCubit>().newsSearchAndFilter(
+            isSearch: true,
+            searchQuery: searchQuery,
+            newsList: newsList,
+            reset: reset);
+        return null;
+      },
+      onPressedAction: () => switchListStyle(),
+      onPressedFilterButton: () {},
+    );
+    // }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: HomeAppBar(
-        filtterWidget: BlocBuilder<NewsCubit, NewsState>(
-          builder: (context, state) {
-            if (state.status == CubitStatus.succses &&
-                state.newsList.isNotEmpty) {
-              return FilterDropDownWidget(
-                popubFilterType: popubFilterType,
-                onSelected: (FilterDropDown result) {
-                  // Handle menu item selection
-                  context.read<NewsCubit>().newsSearchAndFilter(
-                        isSearch: false,
-                        searchQuery: result.filterName,
-                        newsList: newsList,
-                        reset: result.filterName == LocaleKeys.all.tr(),
-                      );
-                },
-              );
-            } else {
-              return const SizedBox();
-            }
-          },
-        ),
-        title: LocaleKeys.nytNews.tr(),
-        roundedBottomShape: true,
-        isGridView: isGridView,
-        centerTitle: false,
-        onSearchSubmited: (searchQuery) {
-          bool reset = searchQuery!.isEmpty;
-          context.read<NewsCubit>().newsSearchAndFilter(
-              isSearch: true,
-              searchQuery: searchQuery,
-              newsList: newsList,
-              reset: reset);
-          return null;
-        },
-        onChangedSearch: (searchQuery) {
-          bool reset = searchQuery!.isEmpty;
-          context.read<NewsCubit>().newsSearchAndFilter(
-              isSearch: true,
-              searchQuery: searchQuery,
-              newsList: newsList,
-              reset: reset);
-          return null;
-        },
-        onPressedAction: () => switchListStyle(),
-        onPressedFilterButton: () {},
-      ),
+      appBar: homeAppBar(),
       drawer: const NewsDrawerWidget(),
       body: BlocConsumer<NewsCubit, NewsState>(
         listener: (context, state) {
@@ -274,6 +280,7 @@ class _NewsPageState extends State<NewsPage> {
       },
     );
   }
+
   //TODO:Stil Need Check Orientation Procsses Layouts
 // new OrientationBuilder(
 //   builder: (context, orientation) {

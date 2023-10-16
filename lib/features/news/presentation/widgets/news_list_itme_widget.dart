@@ -39,7 +39,9 @@ class NewsListItemWidget extends StatelessWidget {
                 child: MainImageWidget(
                   width: AppWidthManger.w30,
                   height: AppWidthManger.w30,
-                  imageUrl: newsItem.multimedia[0].url,
+                  imageUrl: newsItem.multimedia.isEmpty
+                      ? ''
+                      : newsItem.multimedia[0].url,
                   borderRadius: BorderRadius.circular(AppRadiusManger.r3),
                   fit: BoxFit.cover,
                 ),

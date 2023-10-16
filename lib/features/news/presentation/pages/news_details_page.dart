@@ -73,21 +73,24 @@ class NewsPageDetails extends StatelessWidget {
                 height: AppHeightManger.h2,
               ),
               //See All
-              InkWell(
-                onTap: () => Navigator.pushNamed(
-                    context, RouteNamedScreens.webViewNameRoutePage,
-                    arguments: newsDetails.url),
-                child: Align(
-                  alignment: checkIfLTR(context: context)
-                      ? Alignment.centerRight
-                      : Alignment.centerLeft,
-                  child: AppTextWidget(
-                    text: LocaleKeys.seeMore.tr(),
-                    decorationColor: AppColorManger.blueAppColor,
-                    textDecoration: TextDecoration.underline,
-                    fontSize: FontSizeManger.fs16,
-                    color: AppColorManger.blueAppColor,
-                    fontWeight: FontWeightManger.semiBoldWeight,
+              Visibility(
+                visible: newsDetails.url.isNotEmpty,
+                child: InkWell(
+                  onTap: () => Navigator.pushNamed(
+                      context, RouteNamedScreens.webViewNameRoutePage,
+                      arguments: newsDetails.url),
+                  child: Align(
+                    alignment: checkIfLTR(context: context)
+                        ? Alignment.centerRight
+                        : Alignment.centerLeft,
+                    child: AppTextWidget(
+                      text: LocaleKeys.seeMore.tr(),
+                      decorationColor: AppColorManger.blueAppColor,
+                      textDecoration: TextDecoration.underline,
+                      fontSize: FontSizeManger.fs16,
+                      color: AppColorManger.blueAppColor,
+                      fontWeight: FontWeightManger.semiBoldWeight,
+                    ),
                   ),
                 ),
               ),
