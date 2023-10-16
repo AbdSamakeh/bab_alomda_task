@@ -1,11 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
+import 'package:mockito/mockito.dart';
 import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart';
 import 'package:top_story_nyt/features/news/domain/usecases/get_news_usecase.dart';
 
 import '../../../helper/test_helper.mocks.dart';
-
 
 void main() {
   late GetNewsUsecase? getNewsUsecase;
@@ -20,8 +19,8 @@ void main() {
 
   test('Should Get News From The Repository', () async {
     //Arrange
-    when(mockNewsRepository.getNews() as Function)
-        .thenAnswer((_) async{return; });
+    when(mockNewsRepository.getNews())
+        .thenAnswer((_) async => Right(testNewsDetails));
     //Act
     final result = await getNewsUsecase!();
 

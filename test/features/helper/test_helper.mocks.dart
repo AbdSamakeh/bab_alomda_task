@@ -3,15 +3,26 @@
 // Do not manually edit this file.
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'dart:async' as _i4;
+import 'dart:async' as _i6;
+import 'dart:io' as _i13;
 
 import 'package:dartz/dartz.dart' as _i2;
+import 'package:http/http.dart' as _i5;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:top_story_nyt/core/error/failures.dart' as _i5;
+import 'package:top_story_nyt/core/api/api_methods.dart' as _i12;
+import 'package:top_story_nyt/core/api/connector.dart' as _i14;
+import 'package:top_story_nyt/core/error/failures.dart' as _i7;
+import 'package:top_story_nyt/features/news/data/datasources/local/news_local.dart'
+    as _i10;
+import 'package:top_story_nyt/features/news/data/datasources/remote/news_remote.dart'
+    as _i9;
+import 'package:top_story_nyt/features/news/data/models/news_model.dart' as _i3;
 import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart'
-    as _i6;
+    as _i8;
 import 'package:top_story_nyt/features/news/domain/repositories/news_repository.dart'
-    as _i3;
+    as _i4;
+import 'package:top_story_nyt/features/news/domain/usecases/get_news_usecase.dart'
+    as _i11;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -34,29 +45,353 @@ class _FakeEither_0<L, R> extends _i1.SmartFake implements _i2.Either<L, R> {
         );
 }
 
+class _FakeNewsModel_1 extends _i1.SmartFake implements _i3.NewsModel {
+  _FakeNewsModel_1(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeNewsRepository_2 extends _i1.SmartFake
+    implements _i4.NewsRepository {
+  _FakeNewsRepository_2(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
+class _FakeResponse_3 extends _i1.SmartFake implements _i5.Response {
+  _FakeResponse_3(
+    Object parent,
+    Invocation parentInvocation,
+  ) : super(
+          parent,
+          parentInvocation,
+        );
+}
+
 /// A class which mocks [NewsRepository].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockNewsRepository extends _i1.Mock implements _i3.NewsRepository {
+class MockNewsRepository extends _i1.Mock implements _i4.NewsRepository {
   MockNewsRepository() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i4.Future<_i2.Either<_i5.Failure, _i6.NewsResponseEntite>> getNews() =>
+  _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>> getNews() =>
       (super.noSuchMethod(
         Invocation.method(
           #getNews,
           [],
         ),
         returnValue:
-            _i4.Future<_i2.Either<_i5.Failure, _i6.NewsResponseEntite>>.value(
-                _FakeEither_0<_i5.Failure, _i6.NewsResponseEntite>(
+            _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>>.value(
+                _FakeEither_0<_i7.Failure, _i8.NewsResponseEntite>(
           this,
           Invocation.method(
             #getNews,
             [],
           ),
         )),
-      ) as _i4.Future<_i2.Either<_i5.Failure, _i6.NewsResponseEntite>>);
+      ) as _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>>);
+}
+
+/// A class which mocks [NewsRemote].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockNewsRemote extends _i1.Mock implements _i9.NewsRemote {
+  MockNewsRemote() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i6.Future<_i3.NewsModel> getNews() => (super.noSuchMethod(
+        Invocation.method(
+          #getNews,
+          [],
+        ),
+        returnValue: _i6.Future<_i3.NewsModel>.value(_FakeNewsModel_1(
+          this,
+          Invocation.method(
+            #getNews,
+            [],
+          ),
+        )),
+      ) as _i6.Future<_i3.NewsModel>);
+}
+
+/// A class which mocks [NewsLocal].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockNewsLocal extends _i1.Mock implements _i10.NewsLocal {
+  MockNewsLocal() {
+    _i1.throwOnMissingStub(this);
+  }
+}
+
+/// A class which mocks [GetNewsUsecase].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockGetNewsUsecase extends _i1.Mock implements _i11.GetNewsUsecase {
+  MockGetNewsUsecase() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i4.NewsRepository get newsRepository => (super.noSuchMethod(
+        Invocation.getter(#newsRepository),
+        returnValue: _FakeNewsRepository_2(
+          this,
+          Invocation.getter(#newsRepository),
+        ),
+      ) as _i4.NewsRepository);
+
+  @override
+  _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>> call(
+          {dynamic params}) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #call,
+          [],
+          {#params: params},
+        ),
+        returnValue:
+            _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>>.value(
+                _FakeEither_0<_i7.Failure, _i8.NewsResponseEntite>(
+          this,
+          Invocation.method(
+            #call,
+            [],
+            {#params: params},
+          ),
+        )),
+      ) as _i6.Future<_i2.Either<_i7.Failure, _i8.NewsResponseEntite>>);
+}
+
+/// A class which mocks [ApiMethods].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockApiMethod extends _i1.Mock implements _i12.ApiMethods {
+  MockApiMethod() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  Map<String, String> get headers => (super.noSuchMethod(
+        Invocation.getter(#headers),
+        returnValue: <String, String>{},
+      ) as Map<String, String>);
+
+  @override
+  set headers(Map<String, String>? _headers) => super.noSuchMethod(
+        Invocation.setter(
+          #headers,
+          _headers,
+        ),
+        returnValueForMissingStub: null,
+      );
+
+  @override
+  Map<String, dynamic> filterRequest(Map<String, dynamic>? inputMap) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #filterRequest,
+          [inputMap],
+        ),
+        returnValue: <String, dynamic>{},
+      ) as Map<String, dynamic>);
+
+  @override
+  _i6.Future<_i5.Response> get({
+    required String? url,
+    Map<String, dynamic>? path,
+    Map<String, dynamic>? query,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #get,
+          [],
+          {
+            #url: url,
+            #path: path,
+            #query: query,
+          },
+        ),
+        returnValue: _i6.Future<_i5.Response>.value(_FakeResponse_3(
+          this,
+          Invocation.method(
+            #get,
+            [],
+            {
+              #url: url,
+              #path: path,
+              #query: query,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i5.Response>);
+
+  @override
+  _i6.Future<_i5.Response> post({
+    required String? url,
+    Map<String, dynamic>? body,
+    Map<String, dynamic>? query,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #post,
+          [],
+          {
+            #url: url,
+            #body: body,
+            #query: query,
+          },
+        ),
+        returnValue: _i6.Future<_i5.Response>.value(_FakeResponse_3(
+          this,
+          Invocation.method(
+            #post,
+            [],
+            {
+              #url: url,
+              #body: body,
+              #query: query,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i5.Response>);
+
+  @override
+  _i6.Future<_i5.Response> put({
+    required String? url,
+    dynamic body,
+    required Map<String, dynamic>? query,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #put,
+          [],
+          {
+            #url: url,
+            #body: body,
+            #query: query,
+          },
+        ),
+        returnValue: _i6.Future<_i5.Response>.value(_FakeResponse_3(
+          this,
+          Invocation.method(
+            #put,
+            [],
+            {
+              #url: url,
+              #body: body,
+              #query: query,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i5.Response>);
+
+  @override
+  _i6.Future<_i5.Response> delete({
+    required String? url,
+    required dynamic path,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #delete,
+          [],
+          {
+            #url: url,
+            #path: path,
+          },
+        ),
+        returnValue: _i6.Future<_i5.Response>.value(_FakeResponse_3(
+          this,
+          Invocation.method(
+            #delete,
+            [],
+            {
+              #url: url,
+              #path: path,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i5.Response>);
+
+  @override
+  _i6.Future<_i5.Response> multipartRequest({
+    required String? url,
+    required Map<String, dynamic>? fields,
+    required Map<String, _i13.File>? files,
+    required String? methodName,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #multipartRequest,
+          [],
+          {
+            #url: url,
+            #fields: fields,
+            #files: files,
+            #methodName: methodName,
+          },
+        ),
+        returnValue: _i6.Future<_i5.Response>.value(_FakeResponse_3(
+          this,
+          Invocation.method(
+            #multipartRequest,
+            [],
+            {
+              #url: url,
+              #fields: fields,
+              #files: files,
+              #methodName: methodName,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i5.Response>);
+}
+
+/// A class which mocks [Connector].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockConnector<T> extends _i1.Mock implements _i14.Connector<T> {
+  MockConnector() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i6.Future<_i2.Either<_i7.Failure, T>> connect({
+    required _i6.Future<_i2.Right<_i7.Failure, T>> Function()? remote,
+    _i6.Future<_i2.Right<_i7.Failure, T>> Function()? cache,
+  }) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #connect,
+          [],
+          {
+            #remote: remote,
+            #cache: cache,
+          },
+        ),
+        returnValue: _i6.Future<_i2.Either<_i7.Failure, T>>.value(
+            _FakeEither_0<_i7.Failure, T>(
+          this,
+          Invocation.method(
+            #connect,
+            [],
+            {
+              #remote: remote,
+              #cache: cache,
+            },
+          ),
+        )),
+      ) as _i6.Future<_i2.Either<_i7.Failure, T>>);
 }

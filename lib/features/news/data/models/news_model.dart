@@ -26,4 +26,6 @@ class NewsModel extends NewsResponseEntite {
         "num_results": numNewss,
         "results": List<dynamic>.from(results!.map((x) => x.toJson())),
       };
+  NewsResponseEntite toEntite() => NewsResponseEntite(
+      status: status, section: section, numNewss: numNewss, results: results);
 }

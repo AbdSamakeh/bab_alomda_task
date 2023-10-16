@@ -5,7 +5,6 @@ import 'package:http/http.dart' as http;
 import 'package:http_parser/http_parser.dart';
 import 'package:mime/mime.dart';
 
-import '../storage/shared/shared_pref.dart';
 import 'api_url.dart';
 
 //All Api methods with configuration to send http request
@@ -17,7 +16,6 @@ class ApiMethods {
       headers = {
         "Content-type": "application/json",
         "Accept": "application/json",
-        "Accept-Language": AppSharedPreferences.getLanguage(),
       };
     } else {
       headers = header;

@@ -1,14 +1,10 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 // To parse this JSON data, do
 //
 //     final newsResponseEntite = newsResponseEntiteFromJson(jsonString);
 
-
 import 'package:equatable/equatable.dart';
 
 import '../../../data/models/news_model.dart';
-
-
 
 class NewsResponseEntite extends Equatable {
   final String? status;
@@ -27,8 +23,6 @@ class NewsResponseEntite extends Equatable {
   factory NewsResponseEntite.initial() {
     return newsFromJson('{}');
   }
-
-  
 
   @override
   List<Object?> get props => [status, section, numNewss, results];

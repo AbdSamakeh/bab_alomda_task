@@ -25,14 +25,14 @@ class NewsRepositoryImplements implements NewsRepository {
   });
   //Get News Implementation
   @override
-  Future<Either<Failure, NewsModel>> getNews() async {
+  Future<Either<Failure, NewsResponseEntite>> getNews() async {
     //The Connect Metod Inside Connector Class Take The Data Type Of Returned Data After Calling Remote
     //And Check If There Is Any Exception Return It As Left
     //And If The Data Fetched Returned It As Result Paramters To Above Layer
-    return Connector<NewsModel>().connect(
+    return Connector<NewsResponseEntite>().connect(
       remote: () async {
         final result = await newsRemote.getNews();
-        return Right(result);
+        return Right(result.toEntite());
       },
     );
   }

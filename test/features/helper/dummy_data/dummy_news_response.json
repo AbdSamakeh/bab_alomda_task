@@ -1,65 +1,28 @@
 {
-    "status": "OK",
-    "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
-    "section": "home",
-    "last_updated": "2023-10-16T12:56:15-04:00",
-    "num_results": 24,
+    "status": "",
+    "section": "",
+    "num_results": 0,
     "results": [
         {
-            "section": "arts",
-            "subsection": "dance",
-            "title": "Looking Beyond a Dancer’s Confident Grace in ‘States of Hope’",
-            "abstract": "Hope Boykin radiated generosity and joy as a performer. As a choreographer and director, she is showing the struggle the audience couldn’t see.",
-            "url": "https://www.nytimes.com/2023/10/15/arts/dance/hope-boykin-states-of-hope-joyce-theater.html",
-            "uri": "nyt://article/0dd505f3-2264-5c47-ae56-b208c21582ab",
-            "byline": "By Margaret Fuhrer",
-            "item_type": "Article",
-            "updated_date": "2023-10-15T21:56:37-04:00",
-            "created_date": "2023-10-15T05:00:38-04:00",
-            "published_date": "2023-10-15T05:00:38-04:00",
-            "material_type_facet": "",
-            "kicker": "",
-            "des_facet": [
-                "Dancing"
-            ],
-            "org_facet": [
-                "Joyce Theater",
-                "Ailey, Alvin, American Dance Theater"
-            ],
-            "per_facet": [
-                "Boykin, Hope L"
-            ],
-            "geo_facet": [],
+            "section": "",
+            "subsection": "",
+            "title": "",
+            "abstract": "",
+            "url": "",
+            "uri": "",
+            "byline": "",
+            "item_type": "",
+            "published_date": "0000-01-01T00:00:00.000",
             "multimedia": [
                 {
-                    "url": "https://static01.nyt.com/images/2023/10/16/multimedia/15HOPE-BOYKIN-03-tcjq/15HOPE-BOYKIN-03-tcjq-superJumbo.jpg",
-                    "format": "Super Jumbo",
-                    "height": 2048,
-                    "width": 1639,
-                    "type": "image",
-                    "subtype": "photo",
-                    "caption": "Hope Boykin, a former star of Alvin Ailey American Dance Theater, whose latest work as a choreographer, “States of Hope,” will be at the Joyce Theater.",
-                    "copyright": "Erik Tanner for The New York Times"
-                },
-                {
-                    "url": "https://static01.nyt.com/images/2023/10/16/multimedia/15HOPE-BOYKIN-03-tcjq/15HOPE-BOYKIN-03-tcjq-threeByTwoSmallAt2X.jpg",
-                    "format": "threeByTwoSmallAt2X",
-                    "height": 400,
-                    "width": 600,
-                    "type": "image",
-                    "subtype": "photo",
-                    "caption": "Hope Boykin, a former star of Alvin Ailey American Dance Theater, whose latest work as a choreographer, “States of Hope,” will be at the Joyce Theater.",
-                    "copyright": "Erik Tanner for The New York Times"
-                },
-                {
-                    "url": "https://static01.nyt.com/images/2023/10/16/multimedia/15HOPE-BOYKIN-03-tcjq/15HOPE-BOYKIN-03-tcjq-thumbLarge.jpg",
-                    "format": "Large Thumbnail",
-                    "height": 150,
-                    "width": 150,
-                    "type": "image",
-                    "subtype": "photo",
-                    "caption": "Hope Boykin, a former star of Alvin Ailey American Dance Theater, whose latest work as a choreographer, “States of Hope,” will be at the Joyce Theater.",
-                    "copyright": "Erik Tanner for The New York Times"
+                    "url": "",
+                    "format": "",
+                    "height": 0,
+                    "width": 0,
+                    "type": "",
+                    "subtype": "",
+                    "caption": "",
+                    "copyright": ""
                 }
             ],
             "short_url": ""
