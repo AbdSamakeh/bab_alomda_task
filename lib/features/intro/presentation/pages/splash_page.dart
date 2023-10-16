@@ -4,7 +4,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
-import 'package:top_story_nyt/core/resource/color_manger.dart';
 import 'package:top_story_nyt/core/resource/lottie_manager.dart';
 import 'package:top_story_nyt/core/resource/size_manger.dart';
 import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';

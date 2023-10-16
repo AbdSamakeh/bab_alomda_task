@@ -10,7 +10,6 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../core/theme/app_theme.dart';
 import '../router/app_router.dart';
-import '../core/injection/injection_container.dart' as di;
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);

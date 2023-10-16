@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:top_story_nyt/core/function/extention_functions.dart';
 import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';

@@ -9,7 +9,6 @@ import 'package:top_story_nyt/core/resource/enum_manger.dart';
 import 'package:top_story_nyt/core/resource/font_manger.dart';
 import 'package:top_story_nyt/core/resource/lottie_manager.dart';
 import 'package:top_story_nyt/core/resource/size_manger.dart';
-import 'package:top_story_nyt/core/theme/theme_cubit/theme_cubit.dart';
 import 'package:top_story_nyt/core/widget/button/refresh_button.dart';
 import 'package:top_story_nyt/core/widget/list_view/pagination_list_view_separated.dart';
 import 'package:top_story_nyt/core/widget/snack_bar/note_message.dart';
@@ -289,7 +288,7 @@ class _NewsPageState extends State<NewsPage> {
       },
     );
   }
-  //TODO: Check Orientation
+  //TODO:Stil Need Check Orientation Procsses Layouts
 // new OrientationBuilder(
 //   builder: (context, orientation) {
 //     return new GridView.count(
