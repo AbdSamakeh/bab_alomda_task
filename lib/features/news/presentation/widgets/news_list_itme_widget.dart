@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:top_story_nyt/core/function/extention_functions.dart';
 import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';
@@ -35,23 +34,15 @@ class NewsListItemWidget extends StatelessWidget {
               padding: EdgeInsets.all(AppWidthManger.w2),
               width: AppWidthManger.w30,
               height: AppWidthManger.w30,
-              child: CarouselSlider(
-                options: CarouselOptions(
-                    scrollDirection: Axis.horizontal,
-                    viewportFraction: 1,
-                    autoPlay: true),
-                items: newsItem.multimedia.map((item) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(AppRadiusManger.r3),
-                    child: MainImageWidget(
-                      width: AppWidthManger.w30,
-                      height: AppWidthManger.w30,
-                      imageUrl: item.url,
-                      borderRadius: BorderRadius.circular(AppRadiusManger.r3),
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                }).toList(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(AppRadiusManger.r3),
+                child: MainImageWidget(
+                  width: AppWidthManger.w30,
+                  height: AppWidthManger.w30,
+                  imageUrl: newsItem.multimedia[0].url,
+                  borderRadius: BorderRadius.circular(AppRadiusManger.r3),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
 

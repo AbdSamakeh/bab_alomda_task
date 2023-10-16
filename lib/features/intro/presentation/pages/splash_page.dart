@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
 import 'package:top_story_nyt/core/resource/color_manger.dart';
 import 'package:top_story_nyt/core/resource/lottie_manager.dart';
@@ -12,11 +13,34 @@ import 'package:top_story_nyt/generated/locale_keys.g.dart';
 import '../../../../core/resource/font_manger.dart';
 import '../../../../router/app_router.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+
+  @override
+  void initState() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+    super.initState();
+  }
+
+  @override
+  dispose() {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.landscapeRight,
+    ]);
+    super.dispose();
+  }
+
   //!Functions
-  //Logical Function To Navigate Correct Screen If there Is Any Authntication Or Saved Token..
   getCorrectScreen(BuildContext context) {
     Navigator.pushReplacementNamed(
         context, RouteNamedScreens.newsNameRoutePage);

@@ -31,23 +31,15 @@ class NewsGridItemWidget extends StatelessWidget {
           children: [
             //Images
             Expanded(
-              child: CarouselSlider(
-                options: CarouselOptions(
-                    scrollDirection: Axis.horizontal,
-                    viewportFraction: 1,
-                    autoPlay: true),
-                items: newsItem.multimedia.map((item) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(AppRadiusManger.r3),
-                    child: MainImageWidget(
-                      width: AppWidthManger.w100,
-                      height: AppWidthManger.w30,
-                      imageUrl: item.url,
-                      borderRadius: BorderRadius.circular(AppRadiusManger.r3),
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                }).toList(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(AppRadiusManger.r3),
+                child: MainImageWidget(
+                  width: AppWidthManger.w100,
+                  height: AppWidthManger.w30,
+                  imageUrl: newsItem.multimedia[0].url,
+                  borderRadius: BorderRadius.circular(AppRadiusManger.r3),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             //Published Date, Title, Descreption And Section

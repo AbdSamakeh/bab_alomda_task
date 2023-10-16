@@ -8,6 +8,8 @@ abstract class  LocaleKeys {
   static const mobileData = 'mobileData';
   static const wifi = 'wifi';
   static const nytNews = 'nytNews';
+  static const newsDetails = 'newsDetails';
+  static const seeMore = 'seeMore';
   static const pleaseCheckYourInternetConnection = 'pleaseCheckYourInternetConnection';
   static const pleaseTurnOnWifiOrMobileData = 'pleaseTurnOnWifiOrMobileData';
   static const refresh = 'refresh';
