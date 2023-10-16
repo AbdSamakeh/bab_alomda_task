@@ -8,7 +8,7 @@ import '../../../../core/error/failures.dart';
 import '../entities/response/news_response_entite.dart';
 
 //Each Use Case Class Call Specific Method On Repository
-class GetNewsUsecase implements Usecase {
+class GetNewsUsecase implements BaseUsecase {
   final NewsRepository newsRepository;
   GetNewsUsecase({
     required this.newsRepository,

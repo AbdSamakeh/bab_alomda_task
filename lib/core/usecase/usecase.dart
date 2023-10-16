@@ -2,6 +2,6 @@ import 'package:dartz/dartz.dart';
 
 import '../error/failures.dart';
 
-abstract class Usecase {
+abstract class BaseUsecase {
   Future<Either<Failure, dynamic>> call({dynamic params});
 }
