@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../resource/size_manger.dart';
-
 import '../../resource/color_manger.dart';
+import '../../resource/size_manger.dart';
 
 //A Decorated Container With Deafult Shadow Effect
 class DecoratedContainer extends StatelessWidget {

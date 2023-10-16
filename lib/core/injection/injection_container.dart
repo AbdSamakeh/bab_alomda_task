@@ -1,10 +1,10 @@
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart';
-import 'package:top_story_nyt/core/theme/theme_cubit/theme_cubit.dart';
-import 'package:top_story_nyt/features/news/data/datasources/local/news_local.dart';
-import 'package:top_story_nyt/features/news/data/datasources/remote/news_remote.dart';
-import 'package:top_story_nyt/features/news/data/repositories/news_repository_implement.dart';
-import 'package:top_story_nyt/features/news/presentation/cubit/news_cubit/news_cubit.dart';
+import '../theme/theme_cubit/theme_cubit.dart';
+import '../../features/news/data/datasources/local/news_local.dart';
+import '../../features/news/data/datasources/remote/news_remote.dart';
+import '../../features/news/data/repositories/news_repository_implement.dart';
+import '../../features/news/presentation/cubit/news_cubit/news_cubit.dart';
 
 import '../../features/news/domain/repositories/news_repository.dart';
 import '../../features/news/domain/usecases/get_news_usecase.dart';

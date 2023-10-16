@@ -1,12 +1,11 @@
 //Check Network Connection Function
 import 'dart:io';
 
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 import '../../generated/locale_keys.g.dart';
 import '../argument/check_connection_arg.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
-
 import '../resource/constant_manager.dart';
 
 //Connection Checker Function

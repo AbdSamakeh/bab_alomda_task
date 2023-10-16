@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:top_story_nyt/core/function/extention_functions.dart';
-import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';
-import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart';
-import 'package:top_story_nyt/router/app_router.dart';
+import '../../../../core/function/extention_functions.dart';
+import '../../../../core/widget/text/app_text_widget.dart';
+import '../../domain/entities/response/news_response_entite.dart';
+import '../../../../router/app_router.dart';
 
 import '../../../../core/function/global_functions.dart';
 import '../../../../core/resource/color_manger.dart';

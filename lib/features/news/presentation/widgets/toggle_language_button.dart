@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:top_story_nyt/core/storage/shared/shared_pref.dart';
+import '../../../../core/storage/shared/shared_pref.dart';
 
 import '../../../../core/resource/color_manger.dart';
 import '../../../../core/resource/font_manger.dart';

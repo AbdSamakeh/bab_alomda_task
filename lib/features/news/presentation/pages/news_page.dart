@@ -21,11 +21,10 @@ import 'package:top_story_nyt/generated/locale_keys.g.dart';
 import '../../../../core/widget/list_view/pagination_grid_view.dart';
 import '../../domain/entities/response/news_response_entite.dart';
 import '../widgets/filter_drop_down_widget.dart';
+import '../widgets/home_drawer_widget.dart';
 import '../widgets/loading_news_grid_item.dart';
 import '../widgets/loading_news_item_widget.dart';
 import '../widgets/news_grid_item_widget.dart';
-import '../widgets/toggle_language_button.dart';
-import '../widgets/toggle_theme_button.dart';
 
 class NewsPage extends StatefulWidget {
   const NewsPage({super.key});
@@ -90,20 +89,7 @@ class _NewsPageState extends State<NewsPage> {
         onPressedAction: () => switchListStyle(),
         onPressedFilterButton: () {},
       ),
-      drawer: Drawer(
-          child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: AppWidthManger.w4),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const ToggleThemeButton(),
-            SizedBox(
-              height: AppHeightManger.h2,
-            ),
-            const ToggleLanguageButton()
-          ],
-        ),
-      )),
+      drawer: const NewsDrawerWidget(),
       body: BlocConsumer<NewsCubit, NewsState>(
         listener: (context, state) {
           //Switch To Check Status

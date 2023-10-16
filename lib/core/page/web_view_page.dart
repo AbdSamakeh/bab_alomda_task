@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:top_story_nyt/core/resource/color_manger.dart';
-import 'package:top_story_nyt/core/widget/app_bar/main_app_bar.dart';
+import '../resource/color_manger.dart';
+import '../widget/app_bar/main_app_bar.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewPage extends StatefulWidget {

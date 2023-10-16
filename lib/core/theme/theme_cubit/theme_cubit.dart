@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:top_story_nyt/core/storage/shared/shared_pref.dart';
+import '../../storage/shared/shared_pref.dart';
 
 part 'theme_state.dart';
 

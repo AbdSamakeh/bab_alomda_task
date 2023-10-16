@@ -1,12 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'core/resource/constant_manager.dart';
-import 'core/resource/key_manger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'app/my_app.dart';
-import 'core/storage/shared/shared_pref.dart';
 import 'core/injection/injection_container.dart' as di;
+import 'core/resource/constant_manager.dart';
+import 'core/resource/key_manger.dart';
+import 'core/storage/shared/shared_pref.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

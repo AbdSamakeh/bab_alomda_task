@@ -1,4 +1,4 @@
-import 'package:top_story_nyt/features/news/domain/entities/request/news_request_entite.dart';
+import '../../../domain/entities/request/news_request_entite.dart';
 
 import '../../../../../core/api/api_links.dart';
 import '../../../../../core/api/api_methods.dart';

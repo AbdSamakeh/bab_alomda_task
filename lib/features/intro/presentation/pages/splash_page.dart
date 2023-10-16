@@ -4,10 +4,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
-import 'package:top_story_nyt/core/resource/lottie_manager.dart';
-import 'package:top_story_nyt/core/resource/size_manger.dart';
-import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';
-import 'package:top_story_nyt/generated/locale_keys.g.dart';
+import '../../../../core/resource/lottie_manager.dart';
+import '../../../../core/resource/size_manger.dart';
+import '../../../../core/widget/text/app_text_widget.dart';
+import '../../../../generated/locale_keys.g.dart';
 
 import '../../../../core/resource/font_manger.dart';
 import '../../../../router/app_router.dart';

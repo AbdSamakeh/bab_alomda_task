@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:top_story_nyt/core/widget/app_bar/main_app_bar.dart';
-import 'package:top_story_nyt/core/widget/button/refresh_button.dart';
-import 'package:top_story_nyt/generated/locale_keys.g.dart';
+import '../widget/app_bar/main_app_bar.dart';
+import '../widget/button/refresh_button.dart';
+import '../../generated/locale_keys.g.dart';
 
 //Deafult Page If Routing Fail
 class NotFoundPage extends StatelessWidget {

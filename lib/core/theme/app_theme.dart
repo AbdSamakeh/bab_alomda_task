@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
+import '../resource/color_manger.dart';
 import '../resource/font_manger.dart';
 import '../resource/size_manger.dart';
-import '../resource/color_manger.dart';
 
 const primaryColor = AppColorManger.mainAppColor;
 const secondryColor = AppColorManger.secondaryAppColor;

@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:top_story_nyt/core/function/global_functions.dart';
-import 'package:top_story_nyt/core/widget/app_bar/main_app_bar.dart';
-import 'package:top_story_nyt/core/widget/text/app_text_widget.dart';
-import 'package:top_story_nyt/features/news/presentation/widgets/image_slider_widget.dart';
-import 'package:top_story_nyt/generated/locale_keys.g.dart';
-import 'package:top_story_nyt/router/app_router.dart';
+import '../../../../core/function/global_functions.dart';
+import '../../../../core/widget/app_bar/main_app_bar.dart';
+import '../../../../core/widget/text/app_text_widget.dart';
+import '../widgets/image_slider_widget.dart';
+import '../../../../generated/locale_keys.g.dart';
+import '../../../../router/app_router.dart';
 
 import '../../../../core/resource/color_manger.dart';
 import '../../../../core/resource/font_manger.dart';
