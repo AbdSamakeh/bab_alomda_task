@@ -1,7 +1,7 @@
 ## Project Name: Top Story NYT
 
 ## Project Description:
-Top Story NYT is a mobile application project that aims to provide users with the latest news articles. The application allows users to view news headlines and read detailed information about each news article. Users can filter news articles by section, search for news articles by title or author name, and open a web view to explore additional content related to the news article.
+Top Story NYT is a mobile application project that aims to provide users with the latest news articles. The application allows users to view news headlines and read detailed information about each news article. Users can filter news articles by section, search for news articles by title or author name, and open a web view to explore additional content related to the news article ,plus application have iocn and support Dark Mode.
 
 ## Architecture and Design:
 The project follows the principles of clean architecture and Test-Driven Development (TDD). Clean architecture promotes separation of concerns and modularization, making the project more maintainable and scalable. TDD ensures that the code is thoroughly tested, helping to identify and fix issues early in the development process.
