@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:top_story_nyt/features/news/data/models/news_model.dart';
 import 'package:top_story_nyt/features/news/data/repositories/news_repository_implement.dart';
-import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart';
 
 import '../../../helper/test_helper.mocks.dart';
 
@@ -12,19 +11,15 @@ void main() {
   late MockNewsRemote mockNewsRemote;
   late MockNewsLocal mockNewsLocal;
   late NewsRepositoryImplements newsRepositoryImplements;
-  late MockConnector connector;
 
   const testNewsModel =
       NewsModel(status: '', section: '', numNewss: 0, results: []);
-  const testNewsEntite =
-      NewsResponseEntite(status: '', section: '', numNewss: 0, results: []);
 
   setUp(() {
     mockNewsLocal = MockNewsLocal();
     mockNewsRemote = MockNewsRemote();
     newsRepositoryImplements = NewsRepositoryImplements(
         newsRemote: mockNewsRemote, newsLocal: mockNewsLocal);
-    connector = MockConnector();
   });
 
   group('Get News Data', () {

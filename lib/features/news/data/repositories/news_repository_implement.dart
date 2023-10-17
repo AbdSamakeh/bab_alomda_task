@@ -3,7 +3,6 @@ import 'package:dartz/dartz.dart';
 
 import 'package:top_story_nyt/core/error/failures.dart';
 import 'package:top_story_nyt/features/news/data/datasources/local/news_local.dart';
-import 'package:top_story_nyt/features/news/data/models/news_model.dart';
 import 'package:top_story_nyt/features/news/domain/entities/response/news_response_entite.dart';
 
 import '../../../../core/api/connector.dart';

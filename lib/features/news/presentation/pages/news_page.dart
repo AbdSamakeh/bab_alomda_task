@@ -280,15 +280,4 @@ class _NewsPageState extends State<NewsPage> {
       },
     );
   }
-
-  //TODO:Stil Need Check Orientation Procsses Layouts
-// new OrientationBuilder(
-//   builder: (context, orientation) {
-//     return new GridView.count(
-//       // Create a grid with 2 columns in portrait mode, or 3 columns in
-//       // landscape mode.
-//       crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
-//     );
-//   },
-// );
 }

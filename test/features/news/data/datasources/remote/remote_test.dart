@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:top_story_nyt/core/api/api_links.dart';
-import 'package:top_story_nyt/core/error/exception.dart';
 import 'package:top_story_nyt/features/news/data/datasources/remote/news_remote.dart';
 import 'package:top_story_nyt/features/news/data/models/news_model.dart';
 
